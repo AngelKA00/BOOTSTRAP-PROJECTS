@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*---------navigation bar--------*/
+#navbar{
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 100;
+    padding: 8px 8px;
+    background-color: rgb(243, 205, 250);
+    font-weight: bold;
+    
+}
+.navbar .navbar-brand{
+    font-size: 20px;
+    color: black !important;/*black color is must since in html, navbar-dark is given*/
+}
+#navbarSupportedContent  a{
+    
+    color: white;
+}
+#navbarSupportedContent  a:hover{
+    background-color:purple ;
+    transition: 1s;
+    border-radius: 5px;
+}
+#navbarSupportedContent button{
+    background-color: purple;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+}
+/*--------section------*/
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/*-------home------*/
+#home{
+    background-image:  url(img1.webp);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;/*to bring down the p tag*/
+}
+#home h1{
+    color: black;
+    font-size: 100px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+#home p{
+    color: black;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 200;
+}
+/*---------about----------*/
+#about{
+    background-color: white;
+}
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    color: purple;
+    letter-spacing: 5px;
+}
+/*---------product----------*/
+
+#product h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 50px;
+    color: purple;
+    letter-spacing: 5px;
+}
+#product .card{
+    box-shadow: 15px 20px 20px rgba(128,0,128,0.3),inset 4px 4px 10px white;
+}
+#product .card:hover{
+    box-shadow: 12px 12px 14px purple;
+    cursor: pointer;
+}
+#product .card-title{
+    text-align: center;
+}
+/*---------contact----------*/
+#contact img{
+    width: 250px;
+    border-radius: 10px;
+}
+#contact h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 50px;
+    color: purple;
+    letter-spacing: 2px;
+}
+#contact p{
+    font-size: 20px;
+    color: purple;
+    letter-spacing: 2px;
+}
+/*--------footer--------*/
+.card .card-header{
+    background-color: rgb(226, 170, 226);
+}
+.card .card-body .btn{
+    background-color: purple;
+    font-weight: 900;
+    color: black;
+}
+.card .card-body .btn:hover{
+    background-color: rgb(226, 170, 226);
+}
